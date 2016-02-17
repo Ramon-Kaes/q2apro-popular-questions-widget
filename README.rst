@@ -4,7 +4,7 @@ Question2Answer Plugin: Popular questions widget
 -----------
 Description
 -----------
-This is a plugin_ for Question2Answer_ that displays the most viewed questions in a widget.
+This is a plugin_ for Question2Answer_ that displays the most viewed questions in a widget. The widget will be cached once per day, this saves a lot of queries and mysql load.
 
 ------------
 Installation
