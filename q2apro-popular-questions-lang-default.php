@@ -11,7 +11,9 @@
 		'access_forbidden' => 'Access forbidden.',
 		'contact' => 'For questions please visit ^1q2apro.com^2',
 		'admin_maxqu' => 'Maximum number of questions to show in widget:',
-		'admin_lastdays' => 'Number of days to consider the most viewed questions.',
+		'admin_lastdays' => 'Timespan: Number of days to consider the most viewed questions.',
+		'admin_answercount' => 'Show number of answers behind each question title.',
+		'admin_checkhours' => 'Cache update: Every x hours the most viewed questions get calculated.',
 		
 		// plugin
 		'answer_one' => '1 answer',

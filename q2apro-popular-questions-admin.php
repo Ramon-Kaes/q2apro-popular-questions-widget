@@ -16,8 +16,12 @@
 					return 7;
 				case 'q2apro_popularqu_lastdays':
 					return 3;
-				case 'q2apro_popularqu_checkdate':
-					return false; // true
+				case 'q2apro_popularqu_checkhours':
+					return 24;
+				case 'q2apro_popularqu_answercount':
+					return true;
+				case 'q2apro_popularqu_checktime':
+					return false;
 				default:
 					return null;				
 			}
@@ -38,6 +42,8 @@
 				qa_opt('q2apro_popularqu_enabled', (bool)qa_post_text('q2apro_popularqu_enabled')); // empty or 1
 				qa_opt('q2apro_popularqu_maxqu', (int)qa_post_text('q2apro_popularqu_maxqu'));
 				qa_opt('q2apro_popularqu_lastdays', (int)qa_post_text('q2apro_popularqu_lastdays'));
+				qa_opt('q2apro_popularqu_checkhours', (int)qa_post_text('q2apro_popularqu_checkhours'));
+				qa_opt('q2apro_popularqu_answercount', (bool)qa_post_text('q2apro_popularqu_answercount'));
 				$ok = qa_lang('admin/options_saved');
 				
 				// in case the options have been changed, update the widget
@@ -62,10 +68,29 @@
 			);
 			
 			$fields[] = array(
+				'type' => 'checkbox',
+				'label' => qa_lang('q2apro_popularqu_lang/admin_answercount'),
+				'tags' => 'name="q2apro_popularqu_answercount"',
+				'value' => qa_opt('q2apro_popularqu_answercount'),
+			);
+			
+			$fields[] = array(
 				'type' => 'input',
 				'label' => qa_lang('q2apro_popularqu_lang/admin_lastdays'),
 				'tags' => 'name="q2apro_popularqu_lastdays"',
 				'value' => qa_opt('q2apro_popularqu_lastdays'),
+			);
+			
+			$fields[] = array(
+				'type' => 'input',
+				'label' => qa_lang('q2apro_popularqu_lang/admin_checkhours'),
+				'tags' => 'name="q2apro_popularqu_checkhours"',
+				'value' => qa_opt('q2apro_popularqu_checkhours'),
+			);
+			
+			$fields[] = array(
+				'type' => 'static',
+				'note' => 'Remember, you need to add the widget to your site layout at <a href="'.qa_path('admin/layout').'">/admin/layout</a>',
 			);
 			
 			$fields[] = array(
@@ -74,11 +99,6 @@
 							'^1' => '<a target="_blank" href="http://www.q2apro.com/forum/">',
 							'^2' => '</a>'
 						  )).'</span>',
-			);
-			
-			$fields[] = array(
-				'type' => 'static',
-				'note' => 'Remember, you need to add the widget to your site layout at <a href="'.qa_path('admin/layout').'">/admin/layout</a>',
 			);
 			
 			return array(           

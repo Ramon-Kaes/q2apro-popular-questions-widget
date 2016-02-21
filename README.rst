@@ -4,7 +4,7 @@ Question2Answer Plugin: Popular questions widget
 -----------
 Description
 -----------
-This is a plugin_ for Question2Answer_ that displays the most viewed questions in a widget. The widget will be cached once per day, this saves a lot of queries and mysql load.
+This is a plugin_ for Question2Answer_ that displays the most viewed questions in a widget. The widget will be cached every x hours, this saves a lot of queries and mysql load.
 
 ------------
 Installation
@@ -14,7 +14,7 @@ Installation
 #. Extract the files.
 #. Optional: Copy ``q2apro-popular-questions-lang-default.php`` to a new file and add your language, e.g. ``q2apro-popular-questions-lang-fr.php``
 #. Upload the files to a subfolder called ``q2apro-popular-questions-widget`` inside the ``qa-plugin`` folder of your Q2A installation.
-#. Navigate to your site, go to **Admin -> Plugins**. Check if the plugin "q2apro Popular questions widget" is listed.
+#. Navigate to your site, go to **Admin -> Plugins**. Check if the plugin "q2apro Popular questions widget" is listed. Change the settings as you wish.
 #. Navigate to ``yourq2asite.com/admin/layout/`` and add the widget to your layout. 
 #. Congratulations, the widget will show up on the pages you selected.
 

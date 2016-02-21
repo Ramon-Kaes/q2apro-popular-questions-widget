@@ -3,8 +3,8 @@
 	Plugin Name: q2apro Popular questions widget
 	Plugin URI: http://www.q2apro.com/plugins/popular-questions
 	Plugin Description: Displays the most viewed questions in a widget
-	Plugin Version: 0.1
-	Plugin Date: 2016-02-17
+	Plugin Version: 0.2
+	Plugin Date: 2016-02-21
 	Plugin Author: q2apro
 	Plugin Author URI: http://www.q2apro.com/
 	Plugin License: GPLv3
@@ -46,7 +46,7 @@ function q2apro_save_most_viewed_questions()
 	$maxquestions = qa_opt('q2apro_popularqu_maxqu');
 	$lastdays = qa_opt('q2apro_popularqu_lastdays');
 	$ourTopQuestions = qa_db_read_all_assoc( 
-						qa_db_query_sub('SELECT postid,created,upvotes,title,acount FROM `^posts` 
+						qa_db_query_sub('SELECT postid, title, acount FROM `^posts` 
 											WHERE `created` > NOW() - INTERVAL # DAY
 											AND `type` = "Q"
 											AND `closedbyid` IS NULL
@@ -60,10 +60,15 @@ function q2apro_save_most_viewed_questions()
 	foreach($ourTopQuestions as $qu)
 	{
 		$activity_url = qa_path_html(qa_q_request($qu['postid'], $qu['title']), null, qa_opt('site_url'), null, null);
-		$link = '<a href="'.$activity_url.'">'.htmlspecialchars($qu['title']).'</a>';
-		$answercnt = ($qu['acount'] == 1) ? qa_lang('q2apro_popularqu_lang/answer_one') : $qu['acount'].' '.qa_lang('q2apro_popularqu_lang/answers');
+		$questionlink = '<a href="'.$activity_url.'">'.htmlspecialchars($qu['title']).'</a>';
+		$answercnt = '';
+		if(qa_opt('q2apro_popularqu_answercount'))
+		{
+			$acnttitle = ($qu['acount'] == 1) ? qa_lang('q2apro_popularqu_lang/answer_one') : $qu['acount'].' '.qa_lang('q2apro_popularqu_lang/answers');			
+			$answercnt = ' <span title="'.$acnttitle.'">('.$qu['acount'].')</span>';
+		}
 		$saveoutput .= '<li>
-							'.$link.' <span title="'.$answercnt.'">('.$qu['acount'].')</span>
+							'.$questionlink.$answercnt.'
 						</li>
 						';
 	}
