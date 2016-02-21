@@ -90,7 +90,12 @@
 			
 			$fields[] = array(
 				'type' => 'static',
-				'note' => 'Remember, you need to add the widget to your site layout at <a href="'.qa_path('admin/layout').'">/admin/layout</a>',
+				'note' => qa_lang('q2apro_popularqu_lang/admin_lastcache').' '.date('Y-m-d H:i:s', qa_opt('q2apro_popularqu_checktime')),
+			);
+			
+			$fields[] = array(
+				'type' => 'static',
+				'note' => qa_lang('q2apro_popularqu_lang/admin_remember').' <a href="'.qa_path('admin/layout').'">/admin/layout</a>',
 			);
 			
 			$fields[] = array(

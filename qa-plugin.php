@@ -43,6 +43,9 @@ qa_register_plugin_module('module', 'q2apro-popular-questions-admin.php', 'q2apr
 
 function q2apro_save_most_viewed_questions()
 {
+	// save checktime of cache
+	qa_opt('q2apro_popularqu_checktime', time());
+
 	$maxquestions = qa_opt('q2apro_popularqu_maxqu');
 	$lastdays = qa_opt('q2apro_popularqu_lastdays');
 	$ourTopQuestions = qa_db_read_all_assoc( 

@@ -14,6 +14,8 @@
 		'admin_lastdays' => 'Timespan: Number of days to consider the most viewed questions.',
 		'admin_answercount' => 'Show number of answers behind each question title.',
 		'admin_checkhours' => 'Cache update: Every x hours the most viewed questions get calculated.',
+		'admin_remember' => 'Remember, you need to add the widget to your site layout at:',
+		'admin_lastcache' => 'Last cache update was:',
 		
 		// plugin
 		'answer_one' => '1 answer',
