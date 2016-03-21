@@ -90,7 +90,7 @@
 			
 			$fields[] = array(
 				'type' => 'static',
-				'note' => qa_lang('q2apro_popularqu_lang/admin_lastcache').' '.date('Y-m-d H:i:s', qa_opt('q2apro_popularqu_checktime')),
+				'note' => qa_lang('q2apro_popularqu_lang/admin_lastcache').' '.date('Y-m-d H:i:s', (float)qa_opt('q2apro_popularqu_checktime')),
 			);
 			
 			$fields[] = array(
