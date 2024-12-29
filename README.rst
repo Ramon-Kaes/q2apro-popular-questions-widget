@@ -6,6 +6,13 @@ Description
 -----------
 This is a plugin_ for Question2Answer_ that displays the most viewed questions in a widget. The widget will be cached every x hours, this saves a lot of queries and mysql load.
 
+---------
+Changelog
+---------
+v0.3
+#. Full PHP 8.3 compatibility.
+#. Added user avatars and customizable fallback avatar.
+
 ------------
 Installation
 ------------
