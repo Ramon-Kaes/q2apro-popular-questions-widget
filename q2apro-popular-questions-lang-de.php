@@ -20,8 +20,8 @@
 		// plugin
 		'answer_one' => '1 Antwort',
 		'answers' => 'Antworten',
-		'most_popqu' => 'Beliebteste Fragen der letzten',
-		'days' => 'Tage',
+		'most_popqu' => 'Beliebteste Fragen<br><small style="font-weight:400;">der letzten',
+		'days' => 'Tage</small>',
 	);
 	
 
