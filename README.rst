@@ -9,7 +9,8 @@ This is a plugin_ for Question2Answer_ that displays the most viewed questions i
 ---------
 Changelog
 ---------
-v0.3
+v 0.3
+
 #. Full PHP 8.3 compatibility.
 #. Added user avatars and customizable fallback avatar.
 
