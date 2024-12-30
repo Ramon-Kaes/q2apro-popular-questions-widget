@@ -23,6 +23,8 @@
 
     More about this license: http://www.gnu.org/licenses/gpl.html
     
+    Extended by: Ramon Kaes (https://github.com/Ramon-Kaes)
+    
     Changes:
     - Optimized for PHP 8.3
     - Added user avatars to the widget

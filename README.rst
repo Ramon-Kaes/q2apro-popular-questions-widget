@@ -6,14 +6,6 @@ Description
 -----------
 This is a plugin_ for Question2Answer_ that displays the most viewed questions in a widget. The widget will be cached every x hours, this saves a lot of queries and mysql load.
 
----------
-Changelog
----------
-v 0.3
-
-#. Full PHP 8.3 compatibility.
-#. Added user avatars and customizable fallback avatar.
-
 ------------
 Installation
 ------------
@@ -56,9 +48,9 @@ If you use the plugin:
   
 .. _github: https://github.com/q2apro/q2apro-popular-questions-widget
 .. _OpenSource: http://www.gnu.org/licenses/gpl.html
-.. _q2apro plugin page: http://www.q2apro.com/plugins/popular-questions
-.. _q2apro.com: http://www.q2apro.com
-.. _plugin: http://www.q2apro.com/plugins
-.. _plugins: http://www.q2apro.com/plugins
+.. _q2apro plugin page: ~~http://www.q2apro.com/plugins/popular-questions~~
+.. _q2apro.com: ~~http://www.q2apro.com~~
+.. _plugin: ~~http://www.q2apro.com/plugins~~
+.. _plugins: ~~http://www.q2apro.com/plugins~~
 .. _Question2Answer: http://www.question2answer.org/
 .. _Question2Answer forum: http://www.question2answer.org/qa/
