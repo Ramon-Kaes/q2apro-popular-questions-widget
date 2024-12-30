@@ -1,0 +1,9 @@
+
+q2apro Popular Questions Widget Changelog
+
+-----------
+v 0.3.0
+-----------
+
+  - Full PHP 8.3 compatibility.
+  - Added user avatars and customizable fallback avatar.
