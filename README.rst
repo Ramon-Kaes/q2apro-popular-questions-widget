@@ -46,7 +46,7 @@ If you use the plugin:
   * Visit q2apro.com_ to get more free and premium plugins_.
 
   
-.. _github: https://github.com/q2apro/q2apro-popular-questions-widget
+.. _github: https://github.com/Ramon-Kaes/q2apro-popular-questions-widget
 .. _OpenSource: http://www.gnu.org/licenses/gpl.html
 .. _q2apro plugin page: ~~http://www.q2apro.com/plugins/popular-questions~~
 .. _q2apro.com: ~~http://www.q2apro.com~~

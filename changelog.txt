@@ -7,3 +7,9 @@ v 0.3.0
 
   - Full PHP 8.3 compatibility.
   - Added user avatars and customizable fallback avatar.
+
+-----------
+v 0.3.1
+-----------
+
+	- Missing metadata.json added

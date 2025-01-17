@@ -1,15 +1,15 @@
 <?php
 /*
     Plugin Name: q2apro Popular questions widget
-    Plugin URI: http://www.q2apro.com/plugins/popular-questions
+    Plugin URI: https://github.com/Ramon-Kaes/q2apro-popular-questions-widget
     Plugin Description: Displays the most viewed questions in a widget
-    Plugin Version: 0.3
-    Plugin Date: 2023-10-10
-    Plugin Author: q2apro
-    Plugin Author URI: http://www.q2apro.com/
+    Plugin Version: 0.3.1
+    Plugin Date: 2025-01-17
+    Plugin Author: ProThoughts (extended by Ramon Kaes)
+    Plugin Author URI: https://github.com/Ramon-Kaes
     Plugin License: GPLv3
-    Plugin Minimum Question2Answer Version: 1.5
-    Plugin Update Check URI: 
+    Plugin Minimum Question2Answer Version: 1.8.8
+    Plugin Update Check URI: https://github.com/Ramon-Kaes/q2apro-popular-questions-widget/metadata.json
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -22,8 +22,6 @@
     GNU General Public License for more details.
 
     More about this license: http://www.gnu.org/licenses/gpl.html
-    
-    Extended by: Ramon Kaes (https://github.com/Ramon-Kaes)
     
     Changes:
     - Optimized for PHP 8.3

@@ -1,7 +1,7 @@
 <?php
 /*
     Plugin Name: q2apro Popular questions widget
-    Plugin Author: q2apro
+    Plugin Author: q2apro (extended by Ramon Kaes)
 */
 
 class q2apro_popular_questions_widget

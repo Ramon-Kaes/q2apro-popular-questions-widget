@@ -1,0 +1,14 @@
+{
+    "name": "q2apro Popular questions widget",
+    "uri": "https://github.com/Ramon-Kaes/q2apro-popular-questions-widget",
+    "description": "Displays the most viewed questions in a widget",
+    "version": "0.3.1",
+    "date": "2025-01-17",
+    "author": "ProThoughts (extended by Ramon Kaes)",
+    "author_uri": "https://github.com/Ramon-Kaes",
+    "license": "GPLv3+",
+    "update_uri": "https://github.com/Ramon-Kaes/q2apro-popular-questions-widget/metadata.json",
+    "min_q2a": "1.8.8",
+    "min_php": "8.0",
+    "load_order": "after_db_init"
+}
