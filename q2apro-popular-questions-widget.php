@@ -51,7 +51,10 @@ class q2apro_popular_questions_widget
 
     function output_widget($region, $place, $themeobject, $template, $request, $qa_content)
     {
-        if (time() - qa_opt('q2apro_popularqu_checktime') > qa_opt('q2apro_popularqu_checkhours') * 60 * 60) {
+        $checktime = (int) qa_opt('q2apro_popularqu_checktime');
+        $checkhours = (int) qa_opt('q2apro_popularqu_checkhours');
+        
+        if (time() - $checktime > $checkhours * 60 * 60) {
             q2apro_save_most_viewed_questions();
         }
 
