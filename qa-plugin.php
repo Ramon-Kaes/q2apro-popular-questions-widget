@@ -3,7 +3,7 @@
     Plugin Name: q2apro Popular questions widget
     Plugin URI: https://github.com/Ramon-Kaes/q2apro-popular-questions-widget
     Plugin Description: Displays the most viewed questions in a widget
-    Plugin Version: 0.3.1
+    Plugin Version: 0.3.2
     Plugin Date: 2025-01-17
     Plugin Author: ProThoughts (extended by Ramon Kaes)
     Plugin Author URI: https://github.com/Ramon-Kaes
