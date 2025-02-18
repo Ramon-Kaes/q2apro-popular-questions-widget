@@ -7,7 +7,7 @@
     "author": "ProThoughts (extended by Ramon Kaes)",
     "author_uri": "https://github.com/Ramon-Kaes",
     "license": "GPLv3+",
-    "update_uri": "https://github.com/Ramon-Kaes/q2apro-popular-questions-widget/metadata.json",
+    "update_uri": "https://raw.githubusercontent.com/Ramon-Kaes/q2apro-popular-questions-widget/master/metadata.json",
     "min_q2a": "1.8.8",
     "min_php": "8.0",
     "load_order": "after_db_init"
